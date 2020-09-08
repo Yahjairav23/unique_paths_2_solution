@@ -8,7 +8,7 @@ def unique_paths_with_obstacles(obstacle_grid)
     result = Array.new(n, 0)
 
     #check to see if the start point is 0
-    #yes, we will set the zero index of our results array to 1
+    #if yes, we will set the zero index of our results array to 1
     result[0] = 1 if obstacle_grid[0][0] == 0
     
     #loop through each row of the obstacle_grid
@@ -22,6 +22,7 @@ def unique_paths_with_obstacles(obstacle_grid)
         end
     end
     
+
     # return the value for the last index of results array. This tells us all posible routes to the end point.
     result[-1]
 end
